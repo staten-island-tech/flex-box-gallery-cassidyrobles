@@ -9,12 +9,12 @@ body,
 .parent {
   font-size: 30px;
   display: flex;
-  width: 80vw;
+
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 .child {
-  width: 28%;
+  width: 20%;
 }
 .child-1 {
   border: 3px solid green;
@@ -24,9 +24,11 @@ body,
 .child-2 {
   border: 3px solid yellow;
   height: 500px;
+  flex-grow: 2;
 }
 
 .child-3 {
   border: 3px solid blue;
   height: 600px;
+  flex-grow: 3;
 }
