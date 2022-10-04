@@ -7,4 +7,18 @@ html {
 }
 .header {
   text-align: center;
+  font-size: 8rem;
+}
+.allitems {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 100px;
+}
+.item {
+  font-size: 6rem;
+  border: 5px solid red;
+  width: 30%;
+  margin: 20px;
+  border-radius: 20px;
 }
