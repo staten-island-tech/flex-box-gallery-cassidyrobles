@@ -38,18 +38,92 @@ body {
   height: 490px;
   text-align: center;
   box-shadow: 1rem 1rem 4px #888888;
+  transition: 1s ease-in;
 }
 
 .img {
   margin: 30px 0;
   width: auto;
-  height: 500px;
   border: 5px solid white;
+  height: 500px;
   border-radius: 25px;
 }
 h2 {
   font-size: 40px;
 }
-.h1:hover {
-  transform:scale(2);
+h1:hover {
+  transform: scale(1.2);
+}
+h1 {
+  transition: 0.3s ease-in;
+}
+
+.item:hover {
+  transform: scale(1.2);
+}
+.allitems:hover .item:not(:hover) {
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+img:hover {
+  display: inline-block;
+  vertical-align: middle;
+  transition-duration: 0.3s;
+  transition-property: box-shadow, transform;
+}
+img:hover,
+img:focus,
+img:active {
+  box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+body {
+  background: linear-gradient(-45deg, #1a2b38, #644651, #314e5a, #437066);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes hvr-wobble-skew {
+  16.65% {
+    transform: skew(-12deg);
+  }
+  33.3% {
+    transform: skew(10deg);
+  }
+  49.95% {
+    transform: skew(-6deg);
+  }
+  66.6% {
+    transform: skew(4deg);
+  }
+  83.25% {
+    transform: skew(-2deg);
+  }
+  100% {
+    transform: skew(0);
+  }
+}
+h2:hover,
+h2:focus,
+h2:active {
+  animation-name: hvr-wobble-skew;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+img {
+  transition: 1s;
 }
