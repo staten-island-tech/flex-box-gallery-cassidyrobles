@@ -128,45 +128,43 @@ img {
   transition: 1s;
 }
 
-@media all and (max-width: 100rem)
- {
+@media all and (max-width: 100rem) {
   .item {
     height: 450px;
   }
   .header {
     font-size: 5rem;
   }
-  .header2{
-    font-size:1.5rem;
+  .header2 {
+    font-size: 1.5rem;
   }
 }
 
-@media all and (max-width: 70rem)
- {
-  .item{
-    width:60%;
+@media all and (max-width: 70rem) {
+  .item {
+    width: 60%;
   }
-  .header{
-    font-size:4rem;
+  .header {
+    font-size: 3rem;
   }
-  .header2{
-    font-size:3rem;
+  .names {
+    font-size: 2rem;
   }
 }
 
 @media all and (max-width: 50rem) {
   .item {
     width: 90%;
+    height: 20%;
   }
   .header {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 10px;
   }
-  .header2{
-    font-size: 2rem;
+  .names {
+    font-size: 1rem;
   }
-  .img{
-    height:250px;
+  .img {
+    height: 125px;
   }
 }
-
