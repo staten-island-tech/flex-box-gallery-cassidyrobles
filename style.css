@@ -128,7 +128,7 @@ img {
   transition: 1s;
 }
 
-@media all and (max-width: 100rem);
+@media all and (max-width: 100rem)
  {
   .item {
     height: 450px;
@@ -136,10 +136,22 @@ img {
   .header {
     font-size: 5rem;
   }
+  .header2{
+    font-size:3rem;
+  }
 }
 
-@media all and (max-width: 70rem);
+@media all and (max-width: 70rem)
  {
+  .item{
+    width:60%;
+  }
+  .header{
+    font-size:5rem;
+  }
+  .header2{
+    font-size:3rem;
+  }
 }
 
 @media all and (max-width: 50rem) {
@@ -150,5 +162,8 @@ img {
     font-size: 4rem;
     margin: 10px;
   }
+  .header2{
+    font-size: 2rem;
+  }
 }
-@media all and (max-width: );
+
