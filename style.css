@@ -165,5 +165,8 @@ img {
   .header2{
     font-size: 2rem;
   }
+  .img{
+    height:250px;
+  }
 }
 
